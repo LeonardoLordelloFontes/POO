@@ -30,7 +30,6 @@ public class Main {
         }
 
         // a) iv)
-
         r += date.getDayOfYear();
 
         // b) e c)
