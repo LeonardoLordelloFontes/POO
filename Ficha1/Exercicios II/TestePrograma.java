@@ -38,7 +38,7 @@ public class TestePrograma {
                 int z = scanner.nextInt();
                 int t = scanner.nextInt();
                 double media = (Double.valueOf(z) + Double.valueOf(t)) / 2;
-                if (ficha1.maximoNumeros(z, t) == z) System.out.printf("A média entre %d e %d é ", z, t);
+                if (ficha1.maximoNumeros(z, t) == z) System.out.printf("A média entre %d e %d é %.2f", z, t, media);
                 else System.out.printf("A média entre %d e %d é %.2f", t, z, media);
                 break;
             case 6:
