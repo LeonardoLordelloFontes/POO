@@ -281,12 +281,12 @@ public class Main {
                 System.out.print("Insira 5 números diferentes (1-50): ");
                 for (int i = 0; i < 5; i++) {
                     player_numbers[i] = scanner.nextInt();
-                    lucky_numbers[i] = random.nextInt(50) + 1;
+                    lucky_numbers[i] = random.nextInt(50) + 1; // alterar se não quiser valores possivelmente iguais
                 }
                 System.out.print("Insira 2 estrelas diferentes (1-9): ");
                 for (int i = 0; i < 2; i++) {
                     player_stars[i] = scanner.nextInt();
-                    lucky_stars[i] = random.nextInt(9) + 1;
+                    lucky_stars[i] = random.nextInt(9) + 1; // alterar se não quiser valores possivelmente iguais
                 }
                 Arrays.sort(lucky_numbers);
                 Arrays.sort(lucky_stars);
