@@ -67,11 +67,11 @@ public class Circulo {
         Circulo circulo = (Circulo) o;
         return this.x == circulo.getX() && this.y == circulo.getY() && this.raio == circulo.getRaio();
     }
-
-    // ALTERAR PARA STRING BUILDER
     
     public String toString() {
-        return "((x, y), raio) = ((" + x + ", " + y + "), " + raio + ")";
+        StringBuilder sb = new StringBuilder("((x, y), raio) = ((");
+        sb.append(x).append(", ").append(y).append("), ").append(raio).append(")");
+        return sb.toString();
     }
 
     public Circulo clone() {
