@@ -68,6 +68,8 @@ public class Circulo {
         return this.x == circulo.getX() && this.y == circulo.getY() && this.raio == circulo.getRaio();
     }
 
+    // ALTERAR PARA STRING BUILDER
+    
     public String toString() {
         return "((x, y), raio) = ((" + x + ", " + y + "), " + raio + ")";
     }
