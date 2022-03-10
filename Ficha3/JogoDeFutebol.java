@@ -133,14 +133,13 @@ public class JogoDeFutebol {
         return new JogoDeFutebol(this);
     }
 
-    // ALTERAR PARA STRING BUILDER
     public String toString() {
-        String string = "<<<<<<<<<<<< JOGO DE FUTEBOL >>>>>>>>>>>>\n\n";
-        string += "ESTADO: " +  estado + "\n";
-        string += "EQUIPA VISITANTE: " + nomeEquipaVisitante + "\n";
-        string += "EQUIPA VISITADA: " + nomeEquipaVisitada + "\n";
-        string += "GOLOS EQUIPA VISITANTE: " + golosEquipaVisitante + "\n";
-        string += "GOLOS EQUIPA VISITADA: " + golosEquipaVisitada + "\n";
-        return string;
+        StringBuilder sb = new StringBuilder("<<<<<<<<<<<< JOGO DE FUTEBOL >>>>>>>>>>>>\n\n");
+        sb.append("ESTADO: ").append(estado).append("\n").append("EQUIPA VISITANTE: ")
+                .append(nomeEquipaVisitante).append("\n").append("EQUIPA VISITADA: ")
+                .append(nomeEquipaVisitada).append("\n").append("GOLOS EQUIPA VISITANTE: ")
+                .append(golosEquipaVisitante).append("\n").append("GOLOS EQUIPA VISITADA: ")
+                .append(golosEquipaVisitada).append("\n");
+        return sb.toString();
     }
 }
