@@ -133,6 +133,7 @@ public class JogoDeFutebol {
         return new JogoDeFutebol(this);
     }
 
+    // ALTERAR PARA STRING BUILDER
     public String toString() {
         String string = "<<<<<<<<<<<< JOGO DE FUTEBOL >>>>>>>>>>>>\n\n";
         string += "ESTADO: " +  estado + "\n";
