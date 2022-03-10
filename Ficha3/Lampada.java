@@ -145,19 +145,19 @@ public class Lampada {
         return new Lampada(this);
     }
 
-    // ALTERAR PARA STRING BUILDER
     public String toString() {
-        String string = "<<<<<<<<<<<< LAMPADA >>>>>>>>>>>>\n\n";
+        StringBuilder sb = new StringBuilder("<<<<<<<<<<<< LAMPADA >>>>>>>>>>>>\n\n");
         if (this.ligada)
-            string += "STATUS: LIGADA\n";
+            sb.append("STATUS: LIGADA\n");
         else
-            string += "STATUS: DESLIGADA\n";
+            sb.append("STATUS: DESLIGADA\n");
 
-        string += String.format("CONSUMO DE ENERGIA POR MILISSEGUNDO: %.2f WATTZ\n", consumoEnergia);
-        string += String.format("TAXA DE CONSUMO ATUAL: %.2f %%\n", taxaConsumo * 100);
-        string += String.format("TAXA DE CONSUMO NO MODO ECONOMIA: %.2f %%\n", taxaConsumoModoEco * 100);
-        string += String.format("CONSUMO TOTAL DE ENERGIA DESDE O INICIO: %.2f WATTZ\n", consumoTotal);
-        string += String.format("CONSUMO TOTAL DE ENERGIA DESDE O ULTIMO RESET: %.2f WATTZ\n", periodoConsumo());
-        return string;
+        sb.append("CONSUMO DE ENERGIA POR MILISSEGUNDO: ")
+                .append(consumoEnergia).append(" WATTZ\n").append("TAXA DE CONSUMO ATUAL: ")
+                .append(taxaConsumo * 100).append(" %\n").append("TAXA DE CONSUMO NO MODO ECONOMIA: ")
+                .append(taxaConsumoModoEco * 100).append(" %\n").append("CONSUMO TOTAL DE ENERGIA DESDE O INICIO: ")
+                .append(consumoTotal).append(" WATTZ\n").append("CONSUMO TOTAL DE ENERGIA DESDE O ULTIMO RESET: ")
+                .append(periodoConsumo()).append(" WATTZ\n");
+        return sb.toString();
     }
 }
