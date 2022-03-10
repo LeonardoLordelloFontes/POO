@@ -145,6 +145,7 @@ public class Lampada {
         return new Lampada(this);
     }
 
+    // ALTERAR PARA STRING BUILDER
     public String toString() {
         String string = "<<<<<<<<<<<< LAMPADA >>>>>>>>>>>>\n\n";
         if (this.ligada)
